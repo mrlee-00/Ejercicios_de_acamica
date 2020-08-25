@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentro2</title>
+    <style>
+        body {
+            font-family: Calibri;
+        }
+        .nav1 {
+            border-bottom: 2px dotted red;
+        }
+        nav ul li {
+            list-style: none;
+        }
+        .tituloPost{
+            color: red;
+            text-align: center;
+            font-size: 24px;
+        }
+        .articulo{
+            color: gray;
+            font-size: 16px;
+        }
+        .contacto{
+            border: 2px dashed green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Blog
+        </h1>
+        <nav class="nav1">
+            <ul>
+                <li> <a href="/Encuentro2/home.html">Home</a></li>
+                <li> <a href="/Encuentro2/blogs.html">Blogs</a></li>
+                <li> <a href="/Encuentro2/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2 class="tituloPost">
+                Titulo de Post 1
+            </h2>
+            <p class="articulo">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque eum impedit sint minima, ad libero ducimus in nisi,
+                modi placeat, nobis iure vel ratione ipsum saepe!
+                Delectus cumque consequatur accusamus!
+            </p>
+        </div>
+        <div>
+            <h2 class="tituloPost">
+                Titulo de Post 2
+            </h2>
+            <p class="articulo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat odio facilis quibusdam autem, nostrum voluptates, numquam,
+                libero molestias dolores incidunt rem obcaecati iusto quo dolorem
+                cumque porro rerum? Vel, excepturi!
+            </p>
+        </div>
+    </main>
+    <section>
+        <h2>Seccion de Fotos</h2>
+        <img src="/Encuentros/Encuentro2/imagenes/Screenshot (171).png" alt="Imagen del encuentro" height="350px" width="600px">
+        <img src="/Encuentros/Encuentro2/imagenes/c_acamica_150719_1.jpg" alt="Lugar de Acamica" height="350px" width="600px" >
+        <img src="/Encuentros/Encuentro2/imagenes/descarga.png" height="350" width="600">
+    </section>
+        <section class="contacto">
+            <h2>CONTACTO</h2>
+            <form action="" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="John">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@mail.com" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" min="1" name="edad" id="edad">
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    <footer>
+        <p>
+            Copyright@2020 
+        </p>
+        <p>
+            Hecho por David Lee :)
+        </p>
+    </footer>
+</body>
+</html>

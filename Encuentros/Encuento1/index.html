@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi Primera Página</title>
+	<style>
+		body {background: darkgray;}
+		h1 { color: red;}
+		H6 { padding-left: 20px; }
+		p { background-color: black; color: white;}
+	</style>
+</head>
+<body>
+	<h1 id="nombre">
+        David
+    </h1>
+	<h6 id="fecha"> 
+        11 de diciembre 
+    </h6>
+	<p id="descripcion">
+        Vivo en Berazategui
+    </p>
+		<script>
+			nombre =document.getElementById("nombre");
+			nombre.addEventListener("click", function() { alert("Hola, que tal?") });
+		</script>
+	
+</body>
+</html>

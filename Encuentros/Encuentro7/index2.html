@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style type="text/css">
+
+@keyframes rotar {
+		0%  { transform:rotate(0deg);}
+		50% { transform: scale(0.5) rotate(180deg)}
+		100% {transform:rotate(18degdeg); 
+	}
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+
+
+	animation-name: rotar;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.frases {
+	text-emphasis-style: ;
+}
+.frases::before { content: '"'; }
+.frases::after { content: '"'; }
+#texto { max-width: 300px; }
+#texto::first-letter{ font-size: 30px; }
+
+</style>
+</head>
+<body>
+	<p class="frases">A caballo regalado no se le miran los dientes</p>
+	<p id="texto">Lorem Ipsum is simply dummy text
+	of the printing and typesetting industry. </p>
+	<div class="box">caja 1</div>
+	<div class="box">caja 2</div>
+</body>
+</html>

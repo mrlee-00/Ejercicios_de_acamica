@@ -1,0 +1,64 @@
+body{
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+nav{
+    border-bottom: 2px solid #1fb3ed ;
+}
+li{
+    list-style: none;
+}
+.menu li{
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+.logo {
+    float: left;
+}
+h1{
+    float: left;
+    margin-left: 10px ;
+    line-height: 60px;
+}
+nav{
+    float: right;
+}
+h2{
+    color: red;
+    font-size: 24px;
+    text-align: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid #1fb3ed;
+}
+p{
+    color: gray;
+    font-size: 16px;
+}
+
+form{
+    border-radius: 5px;
+    border:2px  solid #1fb3ed;
+}
+.arti{
+    float: left;
+    width: 50%;
+}
+.artder {
+    display: inline-block;
+    width: 50%;
+}
+.contenedor {
+    padding: 2px;
+}
+.parr {
+    text-decoration: underline;
+}
+.parr b{
+    color: red;    
+}

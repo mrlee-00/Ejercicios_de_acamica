@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+​
+<body>
+​
+    <form action="https://acmica-echo.000webhostapp.com/" target="POST">
+​
+        <fieldset>
+            <label for="nombrecompleto" >Ingresa tu nombre completo:</label>
+            <input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Lee David">
+            <legend> Encuesta clase 3</legend> 
+            <br/>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required>
+        
+            <br>
+            <section>
+        
+                <p>><strong>País:</strong></p>
+        
+                <select name="País" required>
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                    <option>Chile</option>
+                    <option>Colombia</option>
+                    <option>Peru</option>
+                    <option>Otro</option>
+                </select>
+            
+            </section>
+            </select>
+            <br>
+            <section>
+                <label for="trabajo">Trabaja actualmente?</label>
+                <br>
+                <label><input type="radio" name="genero" value="masculino" id="trabajo" required> Si</label>
+                <br>
+                <label><input type="radio" name="genero" value="femenino" id="trabajo" required> No</label>
+            </section>
+            <br>
+            <section>
+                <label for="carrera">Carrera a elegir:</label>
+                <br>
+                <input type="radio" name="carrera" id="carrera" required> UX/UI
+                <br/>
+                <input type="radio" name="carrera" id="carrera" required> Data Science
+                <br/>
+                <input type="radio" name="carrera" id="carrera" required> Desarrollo Web Full Stack
+                <br/>
+                <input type="radio" name="carrera" id="carrera" required> Front End Avanzado
+            </section>
+            
+            <section>
+                <br/>
+                <label for="modalidad">Modalidad a elegir:</label>
+                <br>
+                <input type="radio" name="carrera" id="modalidad" required> Presencial
+                <br/>
+                <input type="radio" name="carrera" id="modalidad" required> Online
+                </section>
+                <br>
+            
+            <input type="submit" value="Enviar información">
+            <br>
+            
+            <br>
+            <label for="telefono">Ingrese su numero de telefono:</label>
+            <input type="tel" id="telefono">
+            <br>
+            <br>
+
+            <textarea name="campotexto" maxlength="300">Maximo 300 caracteres</textarea>
+        </fieldset>
+      
+    </form>
+
+        <section>
+
+            <a href="Index.html" >Volver al Blog </a>
+           
+        </section>
+      
+</body>
+</html>
+
+
+
+

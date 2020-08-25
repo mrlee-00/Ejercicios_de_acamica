@@ -1,0 +1,84 @@
+@import "variables";
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $fondo;
+    max-width: 960px;
+}
+header{
+    min-height: 100%;
+    height: auto;
+    margin: -10px;
+    min-width: 100%;
+    background-color: $header;
+}
+header h1{
+    margin: 0;
+    margin-left: 1.5rem;
+    color: $fondo;
+}
+header h3{
+    margin: 0;
+    margin-left: 1.5rem;
+    color: $letras;
+}
+main{
+    h2{
+        color: $h1;
+    }
+    p{
+        color: $letras;
+    }
+    ul{
+        color: $letras;
+        text-decoration: none;
+        li{
+            list-style-type: none;
+        }
+    }
+    .form {
+        background-color: $footer;
+        h3{
+            color: $letras;
+        }
+        form{
+            input{
+                padding: 1rem;
+                border-radius: .8rem;
+                border: 2px solid $borde;
+                display: inline-block;
+                width: 50%;
+                margin: .5rem;
+            }
+            button{
+                color: $fondo;
+                text-decoration: none;
+                border: 2px solid $borde;
+                padding: 1rem;
+                background-color: $header;
+                border-radius: .8rem;  
+            
+            }
+        }
+    }
+}
+
+
+footer{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    background-color: $borde;
+    color: $letras;
+    width: 100%;
+    height: 3rem;
+    div {
+        display: inline;
+        .primerP{
+            float: right;
+        }
+        .ultimoP{
+            float: left;
+        }
+    }
+}

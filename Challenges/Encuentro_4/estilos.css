@@ -1,0 +1,27 @@
+header div img {
+    width: 480px;
+    height: 150px;
+    border: 5px dotted red;
+}
+header div {
+    padding-left: 200px ;
+}
+header h1{
+    font-weight: bolder;
+    padding-left: 50px;
+    font-family: 'Rowdies', cursive;
+    width: 900px;
+}
+main p {
+    width: 650px;
+    padding-left: 130px;
+    font-family: 'Raleway', sans-serif;
+}
+#fecha{
+    font-weight: lighter;
+    font-family: 'Great Vibes', cursive;
+    font-size: 15px;
+}
+footer {
+    font-family: 'Lato', sans-serif;
+}

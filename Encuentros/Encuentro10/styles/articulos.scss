@@ -1,0 +1,116 @@
+@import "variables";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: $fondo;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $letra;
+    a{
+        margin: 0;
+        padding: 0;
+        background-color: $letra;
+    }
+    img{
+        width: 6rem;
+        height: 6rem;
+        margin-left: 1rem;
+        background-color: $letra;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 1rem;
+        margin: 0;
+        background-color: $letra;
+        li{
+            float: right;
+            background-color: $letra;
+            a{
+                display: block;
+                color: $fondo;
+                padding: 1rem 1.1rem;
+                background-color: $letra;
+                text-decoration: none;
+            }
+            a:hover{
+                background-color: #111111;
+            }
+
+        }
+    }
+}
+main{
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        flex: 1;
+        h1{
+            
+            font-size: 2.8rem ;
+        }
+        img{
+            margin: 0;
+            padding: 0;
+            max-width: 45rem;
+            max-height: 35rem;
+            border-radius: 2rem;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: $h1;
+    padding: 0;
+    margin: 0;
+    color: $fondo;
+    width: 100%;
+    p{
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:768px){
+    main img{
+        width: 100%;
+        max-height: 20rem;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        img{
+
+            margin-top: 1rem;
+            width: 4rem;
+            height: 4rem;
+        }
+        ul{
+            margin: 0;
+            li{
+                margin: 0;
+                a{
+                    margin: 0;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+    
+}

@@ -1,0 +1,43 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background-image: url("/Ejercicios/Ejer_enc_2/images/photo-1470229722913-7c0e2dbbafd3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 18px;
+}
+h2 {
+    font-family: 'Rowdies', cursive;
+    font-size: 30px;
+    color: #87CEEB;
+}
+header ul a {
+    text-decoration: none;
+    color: #7AC5CD;
+}
+header li {
+    color: #7AC5CD;
+}
+header ul {
+    text-align: start;
+}
+header h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+main p {
+    margin: 30px 50px 40px;
+    color: #7AC5CD;
+}
+main ul li {
+    color: #7AC5CD;
+}
+main ul a {
+    text-decoration: none;
+    color: #7AC5CD;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+main ul {
+    text-align: start;
+}

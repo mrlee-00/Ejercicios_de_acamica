@@ -1,0 +1,105 @@
+@import "variables";
+
+body{
+    background-color: $background;
+    font-family: $font;
+}
+header{
+    background-color: $fondoheader;
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: $header;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+    }
+}
+
+main{
+    display: flex;
+    
+    section{
+        width: 1500px;
+        div{
+            h1{
+                font-size: 56px;
+                margin-left: 40px;
+            }
+            div{
+                div{
+                    display: flex;
+                    margin: 15px;
+                    img{
+                        border-radius: 50%;
+                        width: 175px;
+                        height: 175px;
+                    }
+                    article{
+                        margin-left: 15px;
+                        h3{
+                            font-size: 26px;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        margin-top: 25px;
+        margin-left: 5px;
+        p{
+            font-size: 32px;
+        }
+        form{
+            
+            display: inline-block;
+            input {
+                background-color: $buttons;
+                padding: 15px;
+                border: 2px solid $header;
+                border-radius: 20px;
+                width: 60%;
+                margin: 10px 0px 10px;
+                
+            }
+
+        }
+        a{
+            margin-top: 30px;
+            text-decoration: none;
+            border: 2px solid $header;
+            padding: 3px 25px 3px 25px;
+            border-radius: 5px ;
+        }
+    }
+}
+footer{
+    background-color: $header;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    color: $letters;
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        div{
+            p{
+                margin: 15px;
+            }
+        }
+    }
+}

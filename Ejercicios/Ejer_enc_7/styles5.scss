@@ -1,0 +1,59 @@
+@import "variables";
+
+body{
+    background-color: $background;
+    font-family: $font;
+}
+header{
+    background-color: $fondoheader;
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: $header;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+    }
+}
+
+main {
+    max-width: 500px;
+    height: 150px;
+    padding: 80px ;
+    margin: 30px auto 30px;
+    text-align: center;
+    border: 3px solid $header;
+    border-radius: 50px;
+    h2{
+        margin: 0;
+        font-size: 44px;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+footer{
+    background-color: $header;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    color: $letters;
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        div{
+            p{
+                margin: 15px;
+            }
+        }
+    }
+}

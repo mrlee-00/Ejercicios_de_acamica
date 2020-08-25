@@ -1,0 +1,148 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eeeeee;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #222831;
+}
+
+header a {
+  margin: 0;
+  padding: 0;
+  background-color: #222831;
+}
+
+header img {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+  background-color: #222831;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  background-color: #222831;
+}
+
+header ul li {
+  float: right;
+  background-color: #222831;
+}
+
+header ul li a {
+  display: block;
+  color: #eeeeee;
+  padding: 1rem 1.1rem;
+  background-color: #222831;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background-color: #111111;
+}
+
+main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main article h1 {
+  font-size: 2.8rem;
+}
+
+main article img {
+  margin: 0;
+  padding: 0;
+  max-width: 45rem;
+  max-height: 35rem;
+  border-radius: 2rem;
+}
+
+main article p {
+  font-size: 1.3rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #32e0c4;
+  padding: 0;
+  margin: 0;
+  color: #eeeeee;
+  width: 100%;
+}
+
+footer p {
+  margin: 1rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  main img {
+    width: 100%;
+    max-height: 20rem;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
+  }
+  header img {
+    margin-top: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  header ul {
+    margin: 0;
+  }
+  header ul li {
+    margin: 0;
+  }
+  header ul li a {
+    margin: 0;
+    padding: .5rem;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=articulos.css.map */

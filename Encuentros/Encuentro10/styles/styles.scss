@@ -1,0 +1,116 @@
+@import "variables";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: $fondo;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $letra;
+    width: 100%;
+    a{
+        margin: 0;
+        padding: 0;
+        background-color: $letra;
+    }
+    img{
+        width: 6rem;
+        height: 6rem;
+        margin-left: 1rem;
+        background-color: $letra;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 1rem;
+        margin: 0;
+        background-color: $letra;
+        li{
+            background-color: $letra;
+            a{
+                display: block;
+                color: $fondo;
+                padding: 1rem 1.1rem;
+                background-color: $letra;
+                text-decoration: none;
+                background-color: $letra;
+            }
+            a:hover{
+                background-color: #111111;
+            }
+
+        }
+    }
+}
+main{
+    display: flex;
+
+    nav{
+        flex: 1;
+        background-color: green;
+    }
+    article{
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+        height: 100%;
+        a{
+            text-decoration: none;
+            border-radius: 3rem;
+            
+        }
+        article{
+            border: 2px solid $otra_letra;
+            border-radius: 3rem;
+            padding: 0.5rem;
+            h3{
+                margin: 1rem;
+                color: $otra_letra;
+                font-size: 1.5rem;
+            }
+            img{
+                width: 20rem;
+                height: 20rem;
+                border-radius: 25px;
+                margin: 3rem;
+            }
+            p{
+                margin: 1rem;
+                color: $letra;
+            }
+        }
+    }
+    aside{
+        flex: 1;
+        background-color: aqua;
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: $h1;
+    padding: 0;
+    margin: 0;
+    color: $fondo;
+    p{
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:768px){
+    aside, nav{
+        visibility: hidden;
+    }
+    header{
+        margin: 2.6rem;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        margin: 2.6rem 2.6rem 0 3.6rem;
+    }
+
+}

@@ -1,0 +1,67 @@
+.reloj{
+    width: 900px;
+    height: 900px;
+    background-color: gray;
+}
+img{
+    background-color: white;
+    border-radius: 50%;
+}
+.medio{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    bottom: 500px;
+    left: 450px;
+    z-index: 5;
+    border-radius: 60%;
+}
+.segundero{
+    width: 10px;
+    height: 350px;
+    position: relative;
+    bottom: 860px;
+    left: 455px;
+    background-color: black;
+    animation-duration: 60s ;
+    animation-name: vuelta;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    
+}
+.minutero{
+    width: 20px;
+    height: 250px;
+    position: relative;
+    bottom: 1100px;
+    left: 450px;
+    background-color: blue;
+    animation-duration: 3600s;
+    animation-name: vuelta;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+.hora{
+    width: 30px;
+    height: 150px;
+    position: relative;
+    bottom: 1250px;
+    left: 446px;
+    background-color: red;
+    animation-duration: 43200s;
+    animation-name: vuelta;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+@keyframes vuelta{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+

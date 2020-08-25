@@ -1,0 +1,70 @@
+body {
+  background-color: #5cdb95;
+  font-family: "Bebas Neue", cursive;
+}
+
+header {
+  background-color: #379683;
+}
+
+header img {
+  width: 100%;
+  height: 200px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header ul a {
+  color: #05386b;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main {
+  max-width: 500px;
+  height: 150px;
+  padding: 80px;
+  margin: 30px auto 30px;
+  text-align: center;
+  border: 3px solid #05386b;
+  border-radius: 50px;
+}
+
+main h2 {
+  margin: 0;
+  font-size: 44px;
+}
+
+main p {
+  font-size: 24px;
+}
+
+footer {
+  background-color: #05386b;
+  width: 100%;
+  margin: 50px 0px 0px 0px;
+  color: #edf5e1;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div div p {
+  margin: 15px;
+}
+/*# sourceMappingURL=styles5.css.map */
