@@ -20,27 +20,51 @@ header{
         margin-left: 1rem;
         background-color: $letra;
     }
-    ul{
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
-        padding: 1rem;
-        margin: 0;
+    .menu{
+        position: relative;
+        display: inline-block;
         background-color: $letra;
-        li{
-            float: right;
+    }
+    .boton{
+        cursor: pointer;
+        border: none;
+        background-color: $letra;
+    }
+    .contenido{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        list-style-type: none;
+        text-decoration: none;
+        color: $h1;
+        background-color: $h1;
+        width: 3rem;
+        height: 3rem;
+        a{
+            color: $fondo;
+            text-decoration: none;
+            background-color: $h1;
+            font-size: 1.5rem;
+        }
+    }
+    .menu:hover .contenido{
+        display: block;
+        background-color: $h1;
+        margin: 0;
+    }
+    div{
+        background-color: $letra;
+        padding: 0;
+        margin: 1rem;
+        button{
+            padding: 0;
+            margin: 0;
             background-color: $letra;
-            a{
-                display: block;
-                color: $fondo;
-                padding: 1rem 1.1rem;
+            img{
+                width: 4rem;
+                height: 4rem;
                 background-color: $letra;
-                text-decoration: none;
             }
-            a:hover{
-                background-color: #111111;
-            }
-
         }
     }
 }
@@ -89,9 +113,8 @@ footer{
     header{
         display: flex;
         justify-content: space-around;
-        width: 90%;
+        width: 100%;
         img{
-
             margin-top: 1rem;
             width: 4rem;
             height: 4rem;
@@ -110,7 +133,7 @@ footer{
     footer{
         display: flex;
         justify-content: space-around;
-        width: 80%;
+        flex-basis: 50rem;
     }
     
 }

@@ -27,34 +27,59 @@ header img {
   background-color: #222831;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+header .menu {
+  position: relative;
+  display: inline-block;
+  background-color: #222831;
+}
+
+header .boton {
+  cursor: pointer;
+  border: none;
+  background-color: #222831;
+}
+
+header .contenido {
+  display: none;
+  position: absolute;
+  z-index: 1;
   list-style-type: none;
-  padding: 1rem;
+  text-decoration: none;
+  color: #32e0c4;
+  background-color: #32e0c4;
+  width: 3rem;
+  height: 3rem;
+}
+
+header .contenido a {
+  color: #eeeeee;
+  text-decoration: none;
+  background-color: #32e0c4;
+  font-size: 1.5rem;
+}
+
+header .menu:hover .contenido {
+  display: block;
+  background-color: #32e0c4;
+  margin: 0;
+}
+
+header div {
+  background-color: #222831;
+  padding: 0;
+  margin: 1rem;
+}
+
+header div button {
+  padding: 0;
   margin: 0;
   background-color: #222831;
 }
 
-header ul li {
-  float: right;
+header div button img {
+  width: 4rem;
+  height: 4rem;
   background-color: #222831;
-}
-
-header ul li a {
-  display: block;
-  color: #eeeeee;
-  padding: 1rem 1.1rem;
-  background-color: #222831;
-  text-decoration: none;
-}
-
-header ul li a:hover {
-  background-color: #111111;
 }
 
 main article {
@@ -119,7 +144,7 @@ footer p {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 90%;
+    width: 100%;
   }
   header img {
     margin-top: 1rem;
@@ -142,7 +167,8 @@ footer p {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 80%;
+    -ms-flex-preferred-size: 50rem;
+        flex-basis: 50rem;
   }
 }
 /*# sourceMappingURL=articulos.css.map */
