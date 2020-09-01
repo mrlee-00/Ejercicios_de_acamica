@@ -1,39 +1,77 @@
 $fondo: #FFFFFF;
-
-*{
+h1{
+    font-size: 2.25rem;
+    font-family: 'IBM Plex Sans', sans-serif; 
+}
+h2{
+    font-size: 2.25rem;
+}
+p{
     font-family: 'IBM Plex Mono', monospace;
-    font-family: 'IBM Plex Sans', sans-serif;
-    background-color: $fondo;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: 1rem;
 }
 .header{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
     .header_opciones{
-        display: flex;
-        li{
-            list-style-type: none;
-            a{
-                padding: 0.3rem;
-                text-decoration: none;
-            }
-        }
+        width: 100%;
     }
-    .header_hamburguesa{
+    .header_logo{
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+    .checkbtn{
+        float: right;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1rem;
+    } 
+    #check{
         display: none;
     }
-}
-@media screen and (max-width: 768px){
-    .header_opciones{
-        position: absolute;
-        right: 0;
-        background-color: blue;
+    .header_hamburguesa{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        list-style-type: none;
+        padding: 0;
+        display: none;
+        li{
+            box-sizing: border-box;
+            padding: 2rem;
+            background-color: blue;
+            width: 100%;
+            a{
+                color: white;
+            }
+        }
+    }   
+    .header_opciones a:hover{
+        background-color: red ;
     }
+    .checkbtn:hover .header_hamburguesa{
+        display: block;
+    }
+}
+.main{
+    border: 2px red dotted;
+    margin: 1rem;
+    width: 90%;
+    .main_titulo{
 
+    }
+    .main_texto{
+
+    }
+    .main_div{
+        display: flex;
+        justify-content: center;
+    }
+    .main_boton{
+        padding: 1.5rem;
+        width: 100%;
+    }
 }
