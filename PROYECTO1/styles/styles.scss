@@ -15,6 +15,7 @@ p{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    border: 2px dotted red;
     .header_opciones{
         width: 100%;
     }
@@ -52,7 +53,7 @@ p{
     .header_opciones a:hover{
         background-color: red ;
     }
-    .checkbtn:hover .header_hamburguesa{
+    .checkbtn:hover, .header_hamburguesa{
         display: block;
     }
 }
@@ -71,6 +72,7 @@ p{
         justify-content: center;
     }
     .main_boton{
+        margin-top: 1rem ;
         padding: 1.5rem;
         width: 100%;
     }
