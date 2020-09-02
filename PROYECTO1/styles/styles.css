@@ -22,7 +22,9 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border: 2px dotted red;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .header .header_opciones {
@@ -32,7 +34,7 @@ p {
 .header .header_logo {
   width: 2rem;
   height: 2rem;
-  margin-top: 1rem;
+  margin: .5rem;
 }
 
 .header .checkbtn {
@@ -66,26 +68,35 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2rem;
-  background-color: blue;
+  background-color: #0000EC;
   width: 100%;
 }
 
 .header .header_hamburguesa li a {
   color: white;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .header .header_opciones a:hover {
   background-color: red;
 }
 
-.header .checkbtn:hover, .header .header_hamburguesa {
+.header #check:checked ~ .header_hamburguesa {
   display: block;
 }
 
 .main {
-  border: 2px red dotted;
   margin: 1rem;
   width: 90%;
+}
+
+.main .main_titulo {
+  font-weight: unset;
+}
+
+.main .main_texto {
+  font-size: 0.875rem;
 }
 
 .main .main_div {
@@ -101,5 +112,22 @@ p {
   margin-top: 1rem;
   padding: 1.5rem;
   width: 100%;
+  background-color: #00F3BB;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.spotify {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background-image: linear-gradient(#0000FF, #0000A3);
+}
+
+.spotify .spotify_titulo {
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: lighter;
+  margin: 5vmin;
 }
 /*# sourceMappingURL=styles.css.map */

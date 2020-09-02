@@ -1,4 +1,5 @@
 $fondo: #FFFFFF;
+$boton: #00F3BB;
 h1{
     font-size: 2.25rem;
     font-family: 'IBM Plex Sans', sans-serif; 
@@ -15,14 +16,14 @@ p{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: 2px dotted red;
+    align-items: baseline;
     .header_opciones{
         width: 100%;
     }
     .header_logo{
         width: 2rem;
         height: 2rem;
-        margin-top: 1rem;
+        margin: .5rem;
     }
     .checkbtn{
         float: right;
@@ -43,29 +44,30 @@ p{
         li{
             box-sizing: border-box;
             padding: 2rem;
-            background-color: blue;
+            background-color: #0000EC;
             width: 100%;
             a{
                 color: white;
+                text-decoration: none;
+                font-family: 'IBM Plex Mono', monospace;
             }
         }
     }   
     .header_opciones a:hover{
         background-color: red ;
     }
-    .checkbtn:hover, .header_hamburguesa{
+    #check:checked ~ .header_hamburguesa{
         display: block;
     }
 }
 .main{
-    border: 2px red dotted;
     margin: 1rem;
     width: 90%;
     .main_titulo{
-
+       font-weight: unset;
     }
     .main_texto{
-
+        font-size: 0.875rem;
     }
     .main_div{
         display: flex;
@@ -75,5 +77,19 @@ p{
         margin-top: 1rem ;
         padding: 1.5rem;
         width: 100%;
+        background-color: $boton;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+}
+.spotify{
+    background-image: linear-gradient(#0000FF, #0000A3);
+    .spotify_titulo{
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: lighter;
+        margin: 5vmin;
     }
 }
