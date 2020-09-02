@@ -80,10 +80,6 @@ p {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-.header .header_opciones a:hover {
-  background-color: red;
-}
-
 .header #check:checked ~ .header_hamburguesa {
   display: block;
 }
@@ -311,5 +307,175 @@ p {
   color: #060A24;
   background-color: transparent;
   width: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header .header_opciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header_opciones .checkbtn {
+    display: none;
+  }
+  .header .header_opciones .header_hamburguesa {
+    display: block;
+  }
+  .header .header_opciones .header_hamburguesa li {
+    padding: 0;
+    display: inline;
+    background-color: white;
+    margin-right: 1rem;
+  }
+  .header .header_opciones .header_hamburguesa li a {
+    color: #060A24;
+    margin: 0 2rem 0;
+  }
+  .header .header_opciones .header_hamburguesa li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  .header .header_opciones .header_hamburguesa li a:active {
+    color: #060A24;
+  }
+  .main {
+    width: 60%;
+    margin: 10rem 10rem;
+  }
+  .main .main_titulo {
+    font-size: 3rem;
+  }
+  .main .main_titulo b {
+    color: #0000EC;
+  }
+  .main .main_texto {
+    width: 70%;
+  }
+  .main .main_boton {
+    width: 23%;
+    padding: 1rem;
+  }
+  .spotify {
+    margin-bottom: 0;
+  }
+  .spotify .spotify_fondo {
+    height: 50rem;
+    margin-bottom: 0;
+  }
+  .spotify .spotify_fondo .spotify_titulo {
+    margin-left: 10rem;
+  }
+  .spotify .spotify_fondo .spotify_lista {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+  }
+  .origenes {
+    margin-top: -8rem;
+  }
+  .origenes .origenes_fondo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 3rem 3rem 3rem;
+  }
+  .origenes .origenes_fondo .origenes_imagen {
+    z-index: 5;
+    max-height: 54rem;
+    max-width: 40rem;
+  }
+  .origenes .origenes_fondo .origenes_articulo_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+  }
+  .invitados {
+    width: 100%;
+    margin: 0;
+  }
+  .invitados .invitados_titulo {
+    margin-left: 10rem;
+  }
+  .invitados .invitados_articulo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .temas {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .temas .temas_titulo {
+    margin-left: 10rem;
+  }
+  .temas .temas_articulo {
+    margin: 3rem 0 0 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .temas .temas_articulo .temas_articulo_puntos {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .temas .temas_articulo .temas_articulo_puntos .temas_articulo_puntos_texto {
+    text-align: center;
+    margin: auto;
+    max-width: 150px;
+  }
+  .novedades {
+    -webkit-transform: skewY(-3deg);
+            transform: skewY(-3deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+  }
+  .novedades .novedades_div {
+    -webkit-transform: skewY(3deg);
+            transform: skewY(3deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 3;
+  }
+  .footer .footer_texto {
+    margin-left: 3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
