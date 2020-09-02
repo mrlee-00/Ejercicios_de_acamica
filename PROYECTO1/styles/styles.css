@@ -1,10 +1,12 @@
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
 }
 
 p {
@@ -122,12 +124,192 @@ p {
 .spotify {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.spotify .spotify_fondo {
+  -webkit-transform: skewY(6deg);
+          transform: skewY(6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
 .spotify .spotify_titulo {
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: lighter;
-  margin: 5vmin;
+  font-weight: 100;
+  margin: 1.5rem;
+}
+
+.spotify .spotify_lista {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4fr;
+      grid-template-rows: 4fr;
+  margin: 1rem;
+  grid-row-gap: .5rem;
+}
+
+.origenes {
+  display: -ms-grid;
+  display: grid;
+}
+
+.origenes .origenes_titulo {
+  margin: 1.5rem;
+}
+
+.origenes .origenes_imagen {
+  width: 100%;
+  margin: 0;
+}
+
+.origenes .origenes_articulo {
+  margin: 2rem 1rem 3rem 1rem;
+}
+
+.invitados .invitados_titulo {
+  margin: 1rem;
+}
+
+.invitados .invitados_articulo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0;
+}
+
+.invitados .invitados_articulo .invitados_imagenes {
+  width: 100%;
+  margin: 0;
+}
+
+.temas {
+  margin-top: 3rem;
+}
+
+.temas .temas_titulo {
+  margin: 1rem;
+}
+
+.temas .temas_articulo .temas_articulo_puntos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.temas .temas_articulo .temas_articulo_puntos .temas_articulo_puntos_texto {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 1000;
+}
+
+.novedades {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background-image: linear-gradient(#0000FF, #0000A3);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  height: 20rem;
+}
+
+.novedades .novedades_div {
+  -webkit-transform: skewY(6deg);
+          transform: skewY(6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.novedades .novedades_titulo {
+  font-weight: 100;
+  color: white;
+  margin: 1rem;
+}
+
+.novedades .novedades_div_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.novedades .novedades_div_boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.novedades .novedades_boton {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  width: 90%;
+  background-color: #00F3BB;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
+}
+
+.footer {
+  height: 10rem;
+  background-color: white;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_texto {
+  font-weight: normal;
+}
+
+.footer .footer_lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer .footer_lista .footer_lista_elemento .footer_lista_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  background-color: transparent;
+}
+
+.footer .footer_lista .footer_lista_elemento .footer_lista_link .fab {
+  color: #060A24;
+  background-color: transparent;
+  width: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */

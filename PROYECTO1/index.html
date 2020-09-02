@@ -35,33 +35,41 @@
             CONOCE MAS
         </button>
     </main>
+    <br>
+    <br>
+    <br>
     <section class="spotify">
-        <h2 class="spotify_titulo">Episodios</h2>
-        <article class="spotify_lista">
-            <div class="spotify_podcasts">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="spotify_podcasts">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="spotify_podcasts">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="spotify_podcasts">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-
-        </article>
+        <div class="spotify_fondo">
+            <h2 class="spotify_titulo">Episodios</h2>
+            <article class="spotify_lista">
+                <div class="spotify_podcasts">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="spotify_podcasts">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="spotify_podcasts">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="spotify_podcasts">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </article>
+        </div>
     </section>
     <section class="origenes">
-        <img class="origenes_imagen" src="./images/phone.png" alt="celular_1">
-        <article class="origenes_articulo">
-            <h2 class="origenes_articulo_titulo">De Donde Venimos</h2>
-            <p class="origenes_articulo_texto">
-                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-            </p>
-        </article>
+        <div class="origenes_fondo">
+            <img class="origenes_imagen" src="./images/phone.png" alt="celular_1">
+            <article class="origenes_articulo">
+                <h2 class="origenes_articulo_titulo">De Donde Venimos</h2>
+                <p class="origenes_articulo_texto">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                </p>
+                <p class="origenes_articulo_texto">
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </article>
+        </div>
     </section>
     <section class="invitados">
         <h2 class="invitados_titulo">Invitadas/os estelares</h2>
@@ -95,18 +103,27 @@
             </div>
         </article>
     </section>
+    <br>
+    <br>
+    <br>
     <section class="novedades">
-        <h2 class="novedades_titulo">¿Queres las ultimas novedades?</h2>
-        <button class="novedades_boton">Escucha los Episodios</button>
+        <div class="novedades_div">
+            <div class="novedades_div_titulo">
+                <h2 class="novedades_titulo">¿Queres las ultimas novedades?</h2>
+            </div>
+            <div class="novedades_div_boton">
+                <button class="novedades_boton">Escucha los Episodios</button>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <p class="footer_texto">@ 2019- Hello blue pale dot</p>
         <ul class="footer_lista">
-            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><img class="footer_lista_imagen" src="#" alt="spotify"></a></li>
-            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><img class="footer_lista_imagen" src="#" alt="instagram"></a></li>
-            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><img class="footer_lista_imagen" src="#" alt="twitter"></a></li>
-            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><img class="footer_lista_imagen" src="#" alt="facebook"></a></li>
-            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><img class="footer_lista_imagen" src="#" alt="telegram"></a></li>
+            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><i class="fab fa-spotify"></i></a></li>
+            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><i class="fab fa-telegram"></i></a></li>
         </ul>
     </footer>
 </html>
