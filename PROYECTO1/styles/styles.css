@@ -159,6 +159,12 @@ p {
   grid-row-gap: .5rem;
 }
 
+.spotify .spotify_podcasts iframe {
+  height: 14.06rem;
+  width: 100%;
+  border: none;
+}
+
 .origenes {
   display: -ms-grid;
   display: grid;
@@ -219,7 +225,7 @@ p {
 .temas .temas_articulo .temas_articulo_puntos .temas_articulo_puntos_texto {
   text-align: center;
   font-size: 1.4rem;
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 .novedades {
@@ -393,6 +399,7 @@ p {
     margin-left: 10rem;
   }
   .spotify .spotify_fondo .spotify_lista {
+    border: none;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -401,6 +408,13 @@ p {
         grid-template-rows: 1fr 1fr;
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
+  }
+  .spotify .spotify_fondo .spotify_lista .spotify_podcasts {
+    border: none;
+  }
+  .spotify .spotify_fondo .spotify_lista .spotify_podcasts iframe {
+    height: 14.5rem;
+    border: none;
   }
   .origenes {
     margin-top: -8rem;

@@ -54,7 +54,10 @@ p{
                 font-family: 'IBM Plex Mono', monospace;
             }
         }
-    }   
+
+    }
+
+       
     #check:checked ~ .header_hamburguesa{
         display: block;
     }
@@ -110,6 +113,13 @@ p{
         margin: 1rem;
         grid-row-gap: .5rem;
     }
+    .spotify_podcasts{
+        iframe{
+            height: 14.06rem;
+            width: 100%;
+            border: none;
+        }
+    }
 }
 .origenes{
     display: grid;
@@ -153,7 +163,7 @@ p{
             .temas_articulo_puntos_texto{
                 text-align: center;
                 font-size: 1.4rem;
-                font-weight: 1000;
+                font-weight: 900;
             }
         }
     }
@@ -287,11 +297,19 @@ p{
                 margin-left: 10rem;
             }
             .spotify_lista{
+                border: none;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 grid-column-gap: 4rem;
                 grid-row-gap: 4rem;
+                .spotify_podcasts{
+                    border: none;
+                    iframe{
+                        height: 14.5rem;
+                        border: none;
+                    }
+                }
             }
         }
     }
