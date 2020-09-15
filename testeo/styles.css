@@ -1,0 +1,249 @@
+h1 {
+  font-size: 2.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+}
+
+.header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.header .header_opciones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header_logo {
+  width: 2rem;
+  height: 2rem;
+  margin: .5rem;
+  position: absolute;
+}
+
+.header .header_hamburguesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style-type: none;
+  padding: 0;
+  display: none;
+  min-width: 100%;
+  margin-top: 3rem;
+}
+
+.header .header_hamburguesa li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  background-color: #0000EC;
+  width: 100%;
+}
+
+.header .header_hamburguesa li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.header #button:checked ~ .header_hamburguesa {
+  display: block;
+  visibility: visible;
+}
+
+#button:checked {
+  float: right;
+}
+
+.boton_y_lista {
+  width: 100%;
+  float: right;
+}
+
+.boton {
+  display: none;
+  visibility: none;
+}
+
+.bar {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  float: right;
+}
+
+.bar .middle {
+  height: 2px;
+  width: 18px;
+  background: black;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bar .top {
+  bottom: 5px;
+  height: 2px;
+  width: 18px;
+  background: black;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bar .bottom {
+  top: 9px;
+  height: 2px;
+  width: 18px;
+  background: black;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.boton:checked ~ .bar .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 18px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  top: -6.3px;
+}
+
+.boton:checked ~ .bar .bottom {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 18px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  top: 6.3px;
+}
+
+.boton:checked ~ .bar .middle {
+  -webkit-transform: translateX(20deg);
+          transform: translateX(20deg);
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header .header_logo {
+    position: static;
+  }
+  .header .boton_y_lista {
+    margin: -2rem 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    float: right;
+  }
+  .header .header_opciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    float: right;
+  }
+  .header .header_opciones .boton {
+    display: none;
+  }
+  .header .header_opciones .bar {
+    display: none;
+  }
+  .header .header_opciones .header_hamburguesa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    float: right;
+  }
+  .header .header_opciones .header_hamburguesa li {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+    max-width: 10rem;
+  }
+  .header .header_opciones .header_hamburguesa li a {
+    padding: 0;
+    color: #060A24;
+    margin: 0 2rem 0;
+  }
+  .header .header_opciones .header_hamburguesa li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  .header .header_opciones .header_hamburguesa li a:active {
+    color: #060A24;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

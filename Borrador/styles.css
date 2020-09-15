@@ -381,7 +381,7 @@ p {
 }
 
 .footer {
-  height: 8rem;
+  height: 10rem;
   background-color: white;
   z-index: 2;
   display: -webkit-box;
@@ -648,7 +648,6 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 3;
-    height: 6rem;
   }
   .footer .footer_texto {
     margin-left: 3rem;
