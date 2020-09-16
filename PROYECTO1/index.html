@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
 </head>
 <body>
     <header class="header">
         <nav class="header_opciones">
-            <img src="/PROYECTO1/images/logo.svg" class="header_logo" alt="Logo1">
-            <div class="menu">
-                <label for="button" class="label"></label>
-                <input type="checkbox" class="boton" id="button"> 
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-                <ul class="header_hamburguesa">
-                    <li><a href="#episodios">EPISODIOS </a></li>
-                    <li><a href="#nosotros">NOSOTROS </a></li>
-                    <li><a href="#entrevistas">ENTREVISTAS </a></li>
-                    <li><a href="#topicos">TOPICOS </a></li>
-                </ul>
-            </div>
+            <img src="./images/logo.svg" class="header_logo" alt="Logo1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="header_hamburguesa">
+                <li><a href="#episodios">EPISODIOS </a></li>
+                <li><a href="#nosotros">NOSOTROS </a></li>
+                <li><a href="#entrevistas">ENTREVISTAS </a></li>
+                <li><a href="#topicos">TOPICOS </a></li>
+            </ul>
         </nav>
     </header>
     <main class="main">
@@ -82,8 +79,8 @@
             <img class="invitados_imagenes" src="./images/grace-hopper.png" alt="invitado1">
             <img class="invitados_imagenes" src="./images/Katie-Bouman.png" alt="invitado2">
             <img class="invitados_imagenes" src="./images/Margaret_Hamilton.png" alt="invitado3">
-            <img class="invitados_imagenes" src="./images/AnE.R.A.Univac1103computerinthe1950s.png" alt="invitado4">
-            <img class="invitados_imagenes" src="./images/ComputeroperatorswithanEniactheworld’sfirstprogrammablegeneralpurposecomputer.png" alt="invitado5">
+            <img class="invitados_imagenes" src="./images/invitado4.png" alt="invitado4">
+            <img class="invitados_imagenes" src="./images/invitado5.png" alt="invitado5">
             <img class="invitados_imagenes" src="./images/susan-kare.png" alt="invitado6">
         </article>
     </section>
@@ -133,5 +130,4 @@
             <li class="footer_lista_elemento"><a class="footer_lista_link" href="#"><i class="fab fa-telegram"></i></a></li>
         </ul>
     </footer>
-</body>
 </html>
