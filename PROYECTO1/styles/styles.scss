@@ -21,8 +21,6 @@ p{
     align-items: baseline;
     .header_opciones{
         width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
     }
     .header_logo{
         width: 2rem;
@@ -56,10 +54,7 @@ p{
                 font-family: 'IBM Plex Mono', monospace;
             }
         }
-
-    }
-
-       
+    }   
     #check:checked ~ .header_hamburguesa{
         display: block;
     }

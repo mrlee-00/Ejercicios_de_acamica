@@ -31,11 +31,6 @@ p {
 
 .header .header_opciones {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
 .header .header_logo {
