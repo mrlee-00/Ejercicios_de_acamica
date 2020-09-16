@@ -27,23 +27,26 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-bottom: 3rem;
 }
 
 .header .header_opciones {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .header_logo {
   width: 2rem;
   height: 2rem;
   margin: .5rem;
-  position: absolute;
 }
 
 .header .header_hamburguesa {
@@ -80,39 +83,13 @@ p {
 
 .header #button:checked ~ .header_hamburguesa {
   display: block;
-  visibility: visible;
 }
 
-#button:checked {
-  float: right;
-}
-
-.boton_y_lista {
-  width: 100%;
-  float: right;
-}
-
-.boton {
+.header .boton {
   display: none;
-  visibility: none;
 }
 
-.bar {
-  position: relative;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 1rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  float: right;
-}
-
-.bar .middle {
+.header .middle {
   height: 2px;
   width: 18px;
   background: black;
@@ -120,9 +97,10 @@ p {
   position: absolute;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  margin: 0;
 }
 
-.bar .top {
+.header .top {
   bottom: 5px;
   height: 2px;
   width: 18px;
@@ -131,9 +109,10 @@ p {
   position: absolute;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  margin: 0;
 }
 
-.bar .bottom {
+.header .bottom {
   top: 9px;
   height: 2px;
   width: 18px;
@@ -142,29 +121,28 @@ p {
   position: absolute;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  margin: 0;
 }
 
-.boton:checked ~ .bar .top {
+.header .boton:checked ~ .top {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 18px;
   -webkit-transform-origin: right;
           transform-origin: right;
-  top: -6.3px;
+  top: -6px;
 }
 
-.boton:checked ~ .bar .bottom {
+.header .boton:checked ~ .bottom {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   width: 18px;
   -webkit-transform-origin: right;
           transform-origin: right;
-  top: 6.3px;
+  top: 6px;
 }
 
-.boton:checked ~ .bar .middle {
-  -webkit-transform: translateX(20deg);
-          transform: translateX(20deg);
+.header .boton:checked ~ .middle {
   opacity: 0;
 }
 
@@ -248,7 +226,6 @@ p {
   height: 16.06rem;
   width: 100%;
   border: none;
-  margin: none;
 }
 
 .origenes {
@@ -429,23 +406,11 @@ p {
 @media screen and (min-width: 768px) {
   .header {
     width: 100%;
+    margin-top: -2rem;
   }
   .header .header_logo {
     position: static;
-  }
-  .header .boton_y_lista {
-    margin: -2rem 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    float: right;
+    margin-top: 2.5rem;
   }
   .header .header_opciones {
     display: -webkit-box;
@@ -478,6 +443,12 @@ p {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     float: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: 2rem;
   }
   .header .header_opciones .header_hamburguesa li {
     padding: 0;
